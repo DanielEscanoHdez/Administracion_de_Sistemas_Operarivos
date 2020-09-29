@@ -8,13 +8,13 @@ Configurar las máquinas virtuales según el documento dado.
 
 ### Captura configuración direccionamiento IP Windows 7 (Server):
 
-![](./Capturas/windows 7 DOS - SSOO2 - Daniel Esc [Corriendo] - Oracle VM VirtualBox_020.png)
+![](./Capturas/4.png)
 
 
 ### Captura configuración direccionamiento IP Windows 7 (Cliente):
 
 
-![](./Capturas/windows 7 - SSOO2 - Daniel Esc [Corriendo] - Oracle VM VirtualBox_012.png)
+![](./5.png)
 
 
 Descargar TightVNC. Esta es una herramienta libre disponible para Windows.
