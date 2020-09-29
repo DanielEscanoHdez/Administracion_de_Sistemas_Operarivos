@@ -14,7 +14,7 @@ Configurar las máquinas virtuales según el documento dado.
 ### Captura configuración direccionamiento IP Windows 7 (Cliente):
 
 
-![](./5.png)
+![](./Capturas/5.png)
 
 
 Descargar TightVNC. Esta es una herramienta libre disponible para Windows.
