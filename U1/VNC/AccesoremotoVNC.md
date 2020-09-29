@@ -18,11 +18,14 @@ Configurar las máquinas virtuales según el documento dado.
 
 
 Descargar TightVNC. Esta es una herramienta libre disponible para Windows.
+
 En el servidor VNC instalaremos TightVNC -> Custom -> Server. Esto es el servicio.
+
 Revisar la configuración del cortafuegos del servidor VNC Windows para permitir VNC.
 
+### Captura de la configuración del cortafuegos para permitir VNC.
 
-
+![](./Capturas/9.png)
 
 
 2º ASIR
