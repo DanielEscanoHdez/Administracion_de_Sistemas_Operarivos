@@ -31,7 +31,7 @@ Revisar la configuración del cortafuegos del servidor VNC Windows para permitir
 
 #### Captura de la configuración del cortafuegos para permitir VNC:
 ![](./Capturas/9.png)
-
+ 
 
 ## 2 Windows: Master VNC
 
