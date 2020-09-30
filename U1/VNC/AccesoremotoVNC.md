@@ -15,7 +15,7 @@ Configurar las máquinas virtuales según el documento dado.
 ![](./Capturas/5.png)
 
 
-#### Captura configuración direccionamiento IP Windows 7 (Cliente):
+#### Captura configuración direccionamiento IP Windows 7 (Viewer):
 ![](./Capturas/4.png)
 
 
@@ -29,7 +29,7 @@ En el servidor VNC instalaremos TightVNC -> Custom -> Server. Esto es el servici
 
 Revisar la configuración del cortafuegos del servidor VNC Windows para permitir VNC.
 
-#### Captura de la configuración del cortafuegos para permitir VNC:
+#### Captura de la configuración del cortafuegos para permitir VNC (Server):
 ![](./Capturas/9.png)
  
 
@@ -41,7 +41,7 @@ En el cliente Windows instalar TightVNC -> Custom -> Viewer.
 Usaremos TightVNC Viewer. Esto es el cliente VNC.
 
 
-#### Captura de la instalación de TightVNC Viewer Windows 7 (Cliente):
+#### Captura de la instalación de TightVNC Viewer Windows 7 (Viewer):
 ![](./Capturas/2.png)
 
 
