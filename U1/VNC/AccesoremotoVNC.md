@@ -48,6 +48,7 @@ Usaremos TightVNC Viewer. Esto es el cliente VNC.
 ## 2.1 Comprobaciones finales
 
 Conectar desde Window Master hacia el Windows Slave.
+
 Ir al servidor VNC y usar el comando netstat -n para ver las conexiones VNC con el cliente.
 
 
