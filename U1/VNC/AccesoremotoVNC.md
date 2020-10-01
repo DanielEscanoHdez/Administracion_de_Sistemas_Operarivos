@@ -1,6 +1,6 @@
 # Acceso remoto VNC
-  
-  
+      
+      
 2º ASIR - Daniel Escaño Hernández
   
 ![](./Capturas/vnc.jpg)
