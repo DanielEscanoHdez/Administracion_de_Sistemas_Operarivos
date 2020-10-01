@@ -1,13 +1,13 @@
 # Acceso remoto VNC  
-  
-  
+
+
 2º ASIR - Daniel Escaño Hernández  
 
 ![](./Capturas/vnc.jpg)  
 
 ## 1. Windows: Slave VNC  
-  
-  
+
+
 Configurar las máquinas virtuales según el documento dado.  
 
 #### Captura configuración direccionamiento IP Windows 7 (Server):
@@ -53,5 +53,5 @@ Ir al servidor VNC y usar el comando netstat -n para ver las conexiones VNC con 
   
 #### Captura de la conexión desde Windows Master hacia Windows Slave y comando netstat:
 ![](./Capturas/1.png)
-  
-  
+
+
