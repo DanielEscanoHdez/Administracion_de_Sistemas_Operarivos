@@ -81,6 +81,7 @@ Por ejemplo, podemos añadir líneas al fichero de configuración del 1er-apelli
 
 #### Captura de la comprobacion del cambio:
 ![](./capturas/4.png)  
+
 ![](./capturas/16.png)  
 
 
@@ -98,7 +99,7 @@ Por ejemplo, podemos añadir líneas al fichero de configuración del 1er-apelli
 
 
 
-## 6. Uso de SSH como tunel para X
+## 6. Uso de SSH como tunel para Geany
 
 Instalar en el servidor una aplicación de entorno gráfico (APP1) que no esté en los clientes. Por ejemplo Geany. Si estuviera en el cliente entonces buscar otra aplicación o desinstalarla en el cliente.
 
