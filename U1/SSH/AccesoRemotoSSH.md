@@ -3,7 +3,7 @@
 
 2º ASIR - Daniel Escaño Hernández  
 
-![](./Capturas/ssh.jpg)  
+![](./capturas/ssh.jpg)  
 
 ## 1. Servidor SSH  
 
@@ -15,7 +15,7 @@ Para comprobar los cambios ejecutamos varios comandos:
 
 
 #### Captura comprobacion de comandos (Server):
-![](./Capturas/9.png)  
+![](./capturas/9.png)  
 
 
 Crear 4 usuarios en serverXXg:
@@ -26,7 +26,7 @@ primer-apellido-del-alumno3
 primer-apellido-del-alumno4
 
 #### Captura creacion de usuarios (Server):
-![](./Capturas/8.png)  
+![](./capturas/8.png)  
 
 
 ## 2. Instalacion del servicio SSH en GNU
@@ -38,19 +38,19 @@ systemctl status sshd, esta es la forma habitual de comprobar los servicios.
 ps -ef|grep sshd, esta es otra forma de comprobarlo mirando los procesos del sistema.
 
 #### Captura de la comprobacion de la instalacion:
-![](./Capturas/10.png)  
+![](./capturas/10.png)  
 
 
 Desde el cliente GNU nos conectamos mediante ssh 1er-apellido-alumno1@serverXXg.
 
 
 #### Captura de la conexión SSH desde cliente GNU:
-![](./Capturas/1.png)  
+![](./capturas/1.png)  
 
 Desde el cliente Windows nos conectamos usando PuTTY.
 
 #### Captura de la conexión SSH desde cliente Windows:
-![](./Capturas/15.png)  
+![](./capturas/15.png)  
 
 
 
@@ -62,12 +62,12 @@ Comentar el resto de líneas con configuración HostKey
 
 
 #### Captura de la configuracion del servidor:
-![](./Capturas/11.png)  
+![](./capturas/11.png)  
 
 
 
 #### Captura de la comprobacion del cambio de identidad:
-![](./Capturas/2.png)  
+![](./capturas/2.png)  
 
 
 
@@ -78,8 +78,8 @@ Por ejemplo, podemos añadir líneas al fichero de configuración del 1er-apelli
 
 
 #### Captura de la comprobacion del cambio:
-![](./Capturas/4.png)  
-![](./Capturas/16.png)  
+![](./capturas/4.png)  
+![](./capturas/16.png)  
 
 
 
@@ -87,12 +87,12 @@ Por ejemplo, podemos añadir líneas al fichero de configuración del 1er-apelli
 
 
 #### Captura de la creacion de nuevas claves:
-![](./Capturas/12.png)  
+![](./capturas/12.png)  
 
 
 
 #### Captura del copiado de nuevas claves:
-![](./Capturas/5.png)  
+![](./capturas/5.png)  
 
 
 
@@ -104,15 +104,15 @@ Modificar servidor SSH para permitir la ejecución de aplicaciones gráficas, de
 
 
 #### Captura del archivo de configuracion:
-![](./Capturas/14.png)  
+![](./capturas/14.png)  
 
 
 #### Captura de el no funcionamiento desde la maquina cliente por su cuenta:
-![](./Capturas/7.png)  
+![](./capturas/7.png)  
 
 
 #### Captura de la comprobacion de la ejecucion desde la maquina cliente tras haber conexion:
-![](./Capturas/6.png)  
+![](./capturas/6.png)  
 
 
 ## 7. Restricciones de uso
@@ -124,13 +124,13 @@ En el servidor tenemos el usuario primer-apellido2. Desde local en el servidor p
 Vamos a modificar SSH de modo que al usar el usuario por SSH desde los clientes tendremos permiso denegado.
 
 #### Captura del archivo de configuracion sshd_config:
-![](./Capturas/18.png)
+![](./capturas/18.png)
 
 #### Captura de la comprobacion de la sintaxis:
-![](./Capturas/19.png)
+![](./capturas/19.png)
 
 #### Captura de la comprobacion de la conexion:
-![](./Capturas/20.png)
+![](./capturas/20.png)
 
 
 
@@ -149,9 +149,9 @@ Comprobamos el funcionamiento desde el cliente en remoto
 
 
 #### Capturas del proceso:
-![](./Capturas/21.png)
-![](./Capturas/23.png)
-![](./Capturas/22.png)
+![](./capturas/21.png)
+![](./capturas/23.png)
+![](./capturas/22.png)
 
 
 
