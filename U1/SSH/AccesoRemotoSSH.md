@@ -76,6 +76,8 @@ Comentar el resto de líneas con configuración HostKey
 
 Por ejemplo, podemos añadir líneas al fichero de configuración del 1er-apellido-alumno1 en la máquina servidor (Fichero /home/1er-apellido-alumno1/.bashrc)
 
+#### Captura de la configuracion de .bashrc:
+![](./capturas/24.png)  
 
 #### Captura de la comprobacion del cambio:
 ![](./capturas/4.png)  
@@ -107,7 +109,7 @@ Modificar servidor SSH para permitir la ejecución de aplicaciones gráficas, de
 ![](./capturas/14.png)  
 
 
-#### Captura de el no funcionamiento desde la maquina cliente por su cuenta:
+#### Captura del no funcionamiento desde la maquina cliente por su cuenta:
 ![](./capturas/7.png)  
 
 
@@ -142,15 +144,21 @@ Incluir al usuario 1er-apellido-alumno4 en el grupo remoteapps.
 Lo hacemos con usermod -G remoteapps escano4
 
 Localizar el programa APP1. Posiblemente tenga permisos 755.
+
 Poner al programa APP1 el grupo propietario a remoteapps.
+
 Poner los permisos del ejecutable de APP1 a 750. Para impedir que los usuarios que no pertenezcan al grupo puedan ejecutar el programa.
+
 Comprobamos el funcionamiento en el servidor en local.
+
 Comprobamos el funcionamiento desde el cliente en remoto
 
 
 #### Capturas del proceso:
 ![](./capturas/21.png)
+
 ![](./capturas/23.png)
+
 ![](./capturas/22.png)
 
 
