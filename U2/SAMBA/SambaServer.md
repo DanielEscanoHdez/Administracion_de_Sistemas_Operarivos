@@ -3,7 +3,7 @@
 
 2º ASIR - Daniel Escaño Hernández  
 
-![](./Capturas/vnc.jpg)  
+![](./Capturas/samba.png)  
 
 
 Vamos a necesitar las siguientes máquinas:
@@ -40,6 +40,12 @@ Dentro del grupo soldados incluir a los usuarios soldado1 y soldado2 y supersamb
 
 Dentro del grupo sambausers, poner a todos los usuarios soldados, piratas, supersamba y a sambaguest.
 
+#### Captura de la creacion de usuarios y grupos:
+
+![](./Capturas/3.png)  
+
+![](./Capturas/2.png)  
+
 ### 1.3 Crear las carpetas para los futuros recursos compartidos
 
 Creamos la carpeta base para los recursos de red de Samba de la siguiente forma:
@@ -58,6 +64,10 @@ Castillo	/srv/sambaXX/castillo.d	supersamba	soldados	770
 
 Barco	/srv/sambaXX/barco.d	supersamba	piratas	770
 
+#### Captura de la creacion de carpetas y asignacion de permisos:
+
+![](./Capturas/4.png)  
+
 ### 1.4 Configurar el servidor Samba
 
 
@@ -75,6 +85,11 @@ Iniciar el servicio durante el arranque de la máquina.
 
 Ajustes del cortafuegos -> Abrir puertos
 
+#### Captura de la asignacion de grupo de trabajo y configuracion del Firewall:
+
+![](./Capturas/5.png)  
+
+![](./Capturas/6.png)  
 
 ### 1.5 Crear los recursos compartidos de red
 
@@ -98,6 +113,15 @@ testparm, verificar la sintaxis del fichero de configuración.
 
 more /etc/samba/smb.conf, consultar el contenido del fichero de configuración.
 
+#### Captura del archivo de configuracion y comprobacion del fichero:
+
+![](./Capturas/7.png)  
+
+![](./Capturas/8.png)  
+
+![](./Capturas/9.png)  
+
+
 ### 1.6 Usuarios Samba
 
 Después de crear los usuarios en el sistema, hay que añadirlos a Samba.
@@ -110,14 +134,21 @@ Esto hay que hacerlo para cada uno de los usuarios de Samba.
 
 pdbedit -L, para comprobar la lista de usuarios Samba.
 
-### 1.7 Reiniciar
+#### Captura de la creacion de las claves Samba:
 
+![](./Capturas/10.png)  
+
+### 1.7 Reiniciar
 
 Ahora que hemos terminado con el servidor, hay que recargar los ficheros de configuración del servicio. Esto es, leer los cambios de configuración. 
 
 Podemos hacerlo por Yast -> Servicios, o usar los comandos: systemctl restart smb y systemctl restart nmb.
 
 sudo lsof -i, comprobar que el servicio SMB/CIF está a la escucha.
+
+#### Captura del reinicio del servicio y comprobacion de que está a la escucha:
+
+![](./Capturas/11.png)  
 
 ## 2. Windows
 
@@ -158,6 +189,14 @@ smbstatus, desde el servidor Samba.
 
 lsof -i, desde el servidor Samba.
 
+#### Captura del acceso a los recursos compartidos desde Windows y comprobacion desde el Servidor:
+
+![](./Capturas/12.png)  
+
+![](./Capturas/13.png)  
+
+![](./Capturas/14.png)  
+
 ### 2.2 Cliente Windows comandos
 
 Abrir una shell de windows.
@@ -169,6 +208,11 @@ Si hubiera alguna conexión abierta la cerramos.
 net use * /d /y, para cerrar las conexiones SMB.
 
 net use ahora vemos que NO hay conexiones establecidas.
+
+#### Captura de que no hay conexiones establecidas:
+
+![](./Capturas/15.png)  
+
 
 Capturar imagen de los comandos siguientes:
 
@@ -190,6 +234,13 @@ Capturar imagen de los siguientes comandos para comprobar los resultados:
 sudo smbstatus, desde el servidor Samba.
 
 lsof -i, desde el servidor Samba.
+
+
+#### Captura del montado de forma persistente desde Windows y comprobacion desde el Servidor:
+
+![](./Capturas/16.png)  
+
+![](./Capturas/17.png)  
 
 
 ## 3 Cliente GNU/Linux
@@ -218,6 +269,18 @@ sudo smbstatus, desde el servidor Samba.
 
 sudo lsof -i, desde el servidor Samba.
 
+#### Captura de la creacion de carpetas en recursos compartidos en Linux y comprobacion desde el Servidor:
+
+![](./Capturas/18.png)  
+
+![](./Capturas/19.png)  
+
+![](./Capturas/20.png)  
+
+![](./Capturas/21.png)  
+
+![](./Capturas/22.png)  
+
 ### 3.2 Cliente GNU/Linux comandos
 
 Capturar imagenes de todo el proceso.
@@ -243,6 +306,13 @@ sudo smbstatus, desde el servidor Samba.
 sudo lsof -i, desde el servidor Samba.
 
 
+#### Captura del montado de forma temporal desde Linux y comprobacion desde el Servidor:
+
+![](./Capturas/23.png)  
+
+![](./Capturas/24.png)  
+
+
 ### 3.3 Montaje automático
 
 Hacer una instantánea de la MV antes de seguir. Por seguridad.
@@ -260,3 +330,10 @@ Para configurar acciones de montaje automáticos cada vez que se inicie el equip
 Reiniciar el equipo y comprobar que se realiza el montaje automático al inicio.
 
 Incluir contenido del fichero /etc/fstab en la entrega.
+
+
+#### Captura del montado de forma automatica desde Linux;
+
+![](./Capturas/25.png)  
+
+![](./Capturas/26.png)  
