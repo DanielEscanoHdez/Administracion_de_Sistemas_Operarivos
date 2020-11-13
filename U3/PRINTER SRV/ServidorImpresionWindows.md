@@ -1,18 +1,21 @@
 # Servidor de Impresion en Windows
 
+
 ![](./capturas/printer.gif)
+
 
 2º ASIR
 Daniel Escaño Hernández
+
 
 ## 1. Impresora compartida
 
 ### 1.1 Rol Impresión
 
+
 Vamos al servidor
 Instalar rol/función de servidor de impresión.
 Incluir impresión por Internet.
-
 
 #### Capturas de la instalacion del rol de servidor de impresion:
 
@@ -22,6 +25,7 @@ Incluir impresión por Internet.
 
 
 ### 1.2 Instalar Impresora PDF
+
 
 PDFCreator es una utilidad completamente gratuita con la que podrás crear archivos PDF desde cualquier aplicación, desde el Bloc de notas hasta Word, Excel, etc. Este programa funciona simulando ser una impresora, de esta forma, instalando PDFCreator todas tus aplicaciones con opción para imprimir te permitirán crear archivos PDF en cuestión de segundos.
 
@@ -35,6 +39,7 @@ En PDFCreator, configurar en perfiles -> Guardar -> Automático. Ahí establecem
 
 ### 1.3 Probar la impresora en local
 
+
 Para crear un archivo PDF no hará falta que cambies la aplicación que estés usando, simplemente ve a la opción de imprimir y selecciona "Impresora PDF", en segundos tendrás creado tu archivo PDF.
 
 Puedes probar la nueva impresora abriendo el Bloc de notas y creando un fichero luego selecciona imprimir. Cuando finalice el proceso se abrirá un fichero PDF con el resultado de la impresión.
@@ -46,6 +51,7 @@ Probar la impresora remota imprimiendo documento imprimirXXs-local.
 ![](./capturas/4.png)
 
 ![](./capturas/5.png)
+
 
 ## 2. Compartir por red
 
@@ -62,6 +68,7 @@ Elegir impresora PDFCreator.
 #### Captura del proceso de compartir:
 
 ![](./capturas/6.png)
+
 
 ### 2.2 Comprobar desde el cliente
 
@@ -80,7 +87,9 @@ Probar la impresora remota imprimiendo documento imprimirXXw-remoto.
 
 ![](./capturas/9.png)
 
+
 ## 3. Acceso Web
+
 
 ### 3.1 Instalar característica impresión WEB
 
@@ -104,6 +113,7 @@ Pincha en la opción propiedades y captura lo que se ve. Apuntar el URL asociado
 
 ![](./capturas/12.png)
 
+
 Agregar impresora (NO es local)
 Crear nueva impresora usando el URL nombre de red de la impresora anterior.
 
@@ -115,7 +125,9 @@ Crear nueva impresora usando el URL nombre de red de la impresora anterior.
 
 ![](./capturas/15.png)
 
+
 ### 3.3 Comprobar desde el navegador
+
 
 Accede a la configuración de la impresora a través del navegador.
 
@@ -126,6 +138,7 @@ Poner en pausa los trabajos de impresión de la impresora.
 ![](./capturas/16.png)
 
 ![](./capturas/17.png)
+
 
 Ir a MV cliente.
 
@@ -138,3 +151,4 @@ Finalmente pulsa en reanudar el trabajo para que tu documento se convierta a PDF
 #### Captura de la comprobacion del correcto funcionamiento:
 
 ![](./capturas/18.png)
+
