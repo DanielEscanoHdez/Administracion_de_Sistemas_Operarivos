@@ -1,6 +1,6 @@
 # Servicio de Directorio con comandos
 
-![](./capturas/ssh.jpg)  
+![](./capturas/a.png)  
 
 ## 1. Prerequisitos
 
