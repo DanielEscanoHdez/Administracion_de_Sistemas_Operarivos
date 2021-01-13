@@ -50,12 +50,9 @@ Debemos estar dentro de vagrantXX-celtics.
 
 vagrant up, para iniciar una nueva instancia de la máquina.
 
-vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
-
-
 ![](./capturas/5.png)
 
-![](./capturas/6.png)
+vagrant ssh: Conectar/entrar en nuestra máquina virtual usando SSH.
 
 ![](./capturas/7.png)
 
