@@ -201,7 +201,7 @@ En este apartado vamos a crear nuestra propia caja/box a partir de una MV de Vir
 
 Ir a la MV de VirtualBox.
 
-Crear el usuario vagranten la MV.
+Crear el usuario vagrant en la MV.
 
 su
 useradd -m vagrant
