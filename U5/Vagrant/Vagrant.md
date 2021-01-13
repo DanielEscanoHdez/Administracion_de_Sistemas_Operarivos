@@ -98,7 +98,9 @@ config.ssh.forward_x11 = true
 ### 5.1 Creamos proyecto Hawks
 
 Crear carpeta vagrantXX-hawks. Entrar en el directorio.
+
 Crear proyecto Vagrant.
+
 Configurar Vagrantfile para usar nuestra caja BOXNAME y hostname = "nombre-alumnoXX-hawks".
 
 Modificar el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfitrión sea enrutado al puerto 80 del ambiente virtualizado.
@@ -107,9 +109,9 @@ config.vm.network :forwarded_port, host: 4567, guest: 80
 
 ![](./capturas/8.png)
 
-vagrant ssh, entramos en la MV
-
 ![](./capturas/9.png)
+
+vagrant ssh, entramos en la MV
 
 Instalamos apache2.
 
@@ -194,6 +196,8 @@ Crear el fichero manifests/nombre-del-alumnoXX.pp, con las órdenes/instruccione
 
 ## 7. Proyecto Bulls
 
+### 7.1 Preparar la MV VirtualBox
+
 En los apartados anteriores hemos descargado una caja/box de un repositorio de Internet, y la hemos personalizado. 
 
 En este apartado vamos a crear nuestra propia caja/box a partir de una MV de VirtualBox que tengamos.
@@ -203,7 +207,6 @@ Ir a la MV de VirtualBox.
 Crear el usuario vagranten la MV.
 
 su
-
 useradd -m vagrant
 
 Poner clave "vagrant" al usuario vagrant.
@@ -215,7 +218,6 @@ Configuramos acceso por clave pública al usuario vagrant:
 mkdir -pm 700 /home/vagrant/.ssh, creamos la carpeta de configuración SSH.
 
 wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys, descargamos la clave pública.
-
 
 chmod 0600 /home/vagrant/.ssh/authorized_keys, modificamos los permisos de la carpeta.
 
@@ -230,7 +232,7 @@ chown -R vagrant /home/vagrant/.ssh, modificamos el propietario de la carpeta.
 
 Tenemos que conceder permisos al usuario vagrant para que pueda hacer tareas privilegiadas como configurar la red,
 
- instalar software, montar carpetas compartidas, etc. Para ello debemos configurar el fichero /etc/sudoers 
+instalar software, montar carpetas compartidas, etc. Para ello debemos configurar el fichero /etc/sudoers 
 
 Añadir vagrant ALL=(ALL) NOPASSWD: ALL al fichero de configuración /etc/sudoers.
 
