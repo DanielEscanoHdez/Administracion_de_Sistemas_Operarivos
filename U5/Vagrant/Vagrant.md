@@ -235,4 +235,30 @@ Añadir vagrant ALL=(ALL) NOPASSWD: ALL al fichero de configuración /etc/sudoer
 
 ![](./capturas/27.png)
 
+### 7.2 Crear caja Vagrant
 
+Vamos a crear una nueva carpeta vagrantXX-bulls, para este nuevo proyecto vagrant.
+
+VBoxManage list vms, comando de VirtualBox que muestra los nombres de nuestras MVs. 
+
+vagrant package --base VMNAME --output nombre-alumnoXX.box, parar crear nuestra propia caja.
+
+Comprobamos que se ha creado el fichero nombre-alumnoXX.box en el directorio donde hemos ejecutado el comando.
+
+vagrant box add nombre-alumno/bulls nombre-alumnoXX.box, añadimos la nueva caja creada por nosotros, al repositorio local de cajas vagrant de nuestra máquina.
+
+vagrant box list, consultar ahora la lista de cajas Vagrant disponibles.
+
+![](./capturas/28.png)
+
+![](./capturas/29.png)
+
+### 7.3 Usar la nueva caja
+
+Crear un nuevo fichero Vagrantfile para usar nuestra caja.
+
+Levantamos una nueva MV a partir del Vagranfile.
+
+![](./capturas/30.png)
+
+![](./capturas/31.png)
