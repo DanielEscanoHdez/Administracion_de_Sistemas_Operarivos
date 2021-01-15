@@ -42,7 +42,7 @@ Crear un directorio para nuestro proyecto. Donde XX es el número de cada alumno
 
 Crear el fichero Vagrantfile de la siguiente forma:
 
-![](./capturas/4.png)
+![](./capturas/32.png)
 
 ### 3.3 Comprobar
 
@@ -104,7 +104,7 @@ Modificar el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfitri
 
 config.vm.network :forwarded_port, host: 4567, guest: 80
 
-![](./capturas/8.png)
+![](./capturas/33.png)
 
 ![](./capturas/9.png)
 
@@ -163,7 +163,7 @@ config.vm.provision :shell, :path => "install_apache.sh", para indicar a Vagrant
 
 config.vm.synced_folder "html", "/var/www/html", para sincronizar la carpeta exterior html con la carpeta interior. De esta forma el fichero "index.html" será visible dentro de la MV.
 
-![](./capturas/16.png)
+![](./capturas/34.png)
 
 vagrant up, para crear la MV.
 
@@ -179,7 +179,7 @@ Crear directorio vagrantXX-raptors como nuevo proyecto Vagrant.
 
 Modificar el archivo Vagrantfile de la siguiente forma:
 
-![](./capturas/21.png)
+![](./capturas/35.png)
 
 Crear la carpeta manifests.
 
