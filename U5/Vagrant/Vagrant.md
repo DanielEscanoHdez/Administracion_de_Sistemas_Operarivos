@@ -42,7 +42,7 @@ Crear un directorio para nuestro proyecto. Donde XX es el número de cada alumno
 
 Crear el fichero Vagrantfile de la siguiente forma:
 
-![](./capturas/4.png)
+![](./capturas/32.png)
 
 ### 3.3 Comprobar
 
@@ -104,7 +104,7 @@ Modificar el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfitri
 
 config.vm.network :forwarded_port, host: 4567, guest: 80
 
-![](./capturas/8.png)
+![](./capturas/33.png)
 
 ![](./capturas/9.png)
 
@@ -163,7 +163,7 @@ config.vm.provision :shell, :path => "install_apache.sh", para indicar a Vagrant
 
 config.vm.synced_folder "html", "/var/www/html", para sincronizar la carpeta exterior html con la carpeta interior. De esta forma el fichero "index.html" será visible dentro de la MV.
 
-![](./capturas/16.png)
+![](./capturas/34.png)
 
 vagrant up, para crear la MV.
 
@@ -179,7 +179,7 @@ Crear directorio vagrantXX-raptors como nuevo proyecto Vagrant.
 
 Modificar el archivo Vagrantfile de la siguiente forma:
 
-![](./capturas/21.png)
+![](./capturas/35.png)
 
 Crear la carpeta manifests.
 
@@ -235,4 +235,30 @@ Añadir vagrant ALL=(ALL) NOPASSWD: ALL al fichero de configuración /etc/sudoer
 
 ![](./capturas/27.png)
 
+### 7.2 Crear caja Vagrant
 
+Vamos a crear una nueva carpeta vagrantXX-bulls, para este nuevo proyecto vagrant.
+
+VBoxManage list vms, comando de VirtualBox que muestra los nombres de nuestras MVs. 
+
+vagrant package --base VMNAME --output nombre-alumnoXX.box, parar crear nuestra propia caja.
+
+Comprobamos que se ha creado el fichero nombre-alumnoXX.box en el directorio donde hemos ejecutado el comando.
+
+vagrant box add nombre-alumno/bulls nombre-alumnoXX.box, añadimos la nueva caja creada por nosotros, al repositorio local de cajas vagrant de nuestra máquina.
+
+vagrant box list, consultar ahora la lista de cajas Vagrant disponibles.
+
+![](./capturas/28.png)
+
+![](./capturas/29.png)
+
+### 7.3 Usar la nueva caja
+
+Crear un nuevo fichero Vagrantfile para usar nuestra caja.
+
+Levantamos una nueva MV a partir del Vagranfile..
+
+![](./capturas/30.png)
+
+![](./capturas/31.png)
