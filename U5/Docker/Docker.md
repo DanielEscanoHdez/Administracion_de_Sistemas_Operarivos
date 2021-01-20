@@ -104,8 +104,11 @@ Crear un contenedor: Vamos a crear un contenedor con nombre app1debian a partir 
 Instalar aplicaciones dentro del contenedor
 
 root@IDContenedor:/# cat /etc/motd            # Comprobamos que estamos en Debian
+
 root@IDContenedor:/# apt-get update
+
 root@IDContenedor:/# apt-get install -y nginx # Instalamos nginx en el contenedor
+
 root@IDContenedor:/# apt-get install -y vim   # Instalamos editor vi en el contenedor
 
 ![](./capturas/9.png)
