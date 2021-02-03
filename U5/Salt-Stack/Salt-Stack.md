@@ -6,10 +6,10 @@ Daniel Escaño Hernández
 
 ## 1 Preparativos
 
-Config			MV1		MV2		MV3
-Hostname		masterXXg	minionXXg	minionXXw
-SO			OpenSUSE	OpenSUSE	Windows
-IP			172.19.XX.31	172.19.XX.32	172.19.XX.11
+Config         MV1              MV2             MV3
+Hostname       masterXXg        minionXXg       minionXXw
+SO             OpenSUSE         OpenSUSE        Windows
+IP             172.19.XX.31	172.19.XX.32    172.19.XX.11
 
 ## 2. Master: Instalar y configurar
 
