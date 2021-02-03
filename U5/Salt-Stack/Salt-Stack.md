@@ -1,6 +1,6 @@
 # Salt-stack
 
-![](./capturas/ssh.jpg)  
+![](./capturas/salt.png)  
 
 Daniel Escaño Hernández
 
