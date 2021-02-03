@@ -87,12 +87,12 @@ salt-key -L, comprobamos.
 Desde el Máster comprobamos:
 
 Conectividad hacia los Minions.
-# salt '*' test.ping
+ salt '*' test.ping
 minionXXg:
     True
 
 Versión de Salt instalada en los Minions
-# salt '*' test.version
+ salt '*' test.version
 minionXXg:
     3000
 
