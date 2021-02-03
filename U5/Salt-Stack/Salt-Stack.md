@@ -230,7 +230,11 @@ holamundo:
     - source: salt://files/holamundo.html
 Ir al master y aplicar el estado "apache".
 
+#### Captura de la creación del fichero y la aplicación del estado apache extendido:
 
+![](./capturas/28.png)
 
+![](./capturas/26.png)
 
+![](./capturas/27.png)
 
