@@ -252,13 +252,3 @@ vagrant box list, consultar ahora la lista de cajas Vagrant disponibles.
 ![](./capturas/28.png)
 
 ![](./capturas/29.png)
-
-### 7.3 Usar la nueva caja
-
-Crear un nuevo fichero Vagrantfile para usar nuestra caja.
-
-Levantamos una nueva MV a partir del Vagranfile..
-
-![](./capturas/30.png)
-
-![](./capturas/31.png)
