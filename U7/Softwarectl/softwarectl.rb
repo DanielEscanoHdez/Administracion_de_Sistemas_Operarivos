@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-# Autor y version: Daniel Escano, 1.0
-# Descripcion: Script para instalar/desinstalar software a través de un archivo
+# Autor y versión: Daniel Escano, 1.0
+# Descripción: Script para instalar/desinstalar software a través de un archivo
 
 puts "============================"
 puts "        Softwarectl         "
