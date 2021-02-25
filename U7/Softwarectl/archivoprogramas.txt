@@ -1,0 +1,4 @@
+tree:install
+nmap:install
+atomix:remove
+zypper:install
